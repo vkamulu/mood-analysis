@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Mood Tracker</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Mood Tracker</h1>
+        <div class="mood-logger">
+            <h3>How are you feeling today?</h3>
+            <div class="mood-buttons">
+                <button data-mood="happy">😊</button>
+                <button data-mood="sad">😢</button>
+                <button data-mood="neutral">😐</button>
+                <button data-mood="excited">😃</button>
+                <button data-mood="angry">😠</button>
+            </div>
+            <p id="message"></p>
+        </div>
+        <div class="mood-display">
+            <h3>Your Mood Trends</h3>
+            <div class="view-controls">
+                <button id="day-view">Day</button>
+                <button id="week-view">Week</button>
+                <button id="month-view">Month</button>
+                <button id="calendar-view">Calendar</button>
+            </div>
+            <div id="timeline" class="timeline"></div>
+            <div id="calendar" class="calendar hidden">
+                <div class="cal-header">
+                    <button id="cal-prev"><</button>
+                    <h4 id="cal-month-year"></h4>
+                    <button id="cal-next">></button>
+                </div>
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div id="cal-days" class="days"></div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

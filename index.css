@@ -1,0 +1,136 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 700px;
+}
+
+h1, h3 {
+    color: #333;
+    text-align: center;
+}
+
+.mood-logger {
+    margin-bottom: 20px;
+}
+
+.mood-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.mood-buttons button {
+    font-size: 24px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.mood-buttons button:hover {
+    transform: scale(1.2);
+}
+
+#message {
+    text-align: center;
+    color: #666;
+}
+
+.view-controls {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.view-controls button {
+    padding: 5px 15px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.view-controls button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.timeline {
+    padding: 10px;
+}
+
+.timeline div {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Calendar Styles */
+.calendar {
+    margin-top: 20px;
+}
+
+.cal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cal-header button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.days div {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 40px;
+}
+
+.days .today {
+    background-color: #007bff;
+    color: white;
+}
+
+.days .inactive {
+    color: #aaa;
+}
+
+.hidden {
+    display: none;
+}
